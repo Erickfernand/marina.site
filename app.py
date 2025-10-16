@@ -15,6 +15,3 @@ def pesquisa():
     termo = request.form["termo"]
     resultado = f"Você pesquisou por: {termo}. (Aqui aparecerá o conteúdo relacionado)"
     return render_template("resultado.html", resultado=resultado)
-
-if __name__ == "__main__":
-    app.run(debug=True)
